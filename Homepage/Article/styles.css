@@ -17,7 +17,6 @@
   margin: auto;
   object-fit: cover; 
 }
-
 .header-text {
     position: absolute;
     top: 50%;
@@ -49,18 +48,23 @@
       text-align: center;
     }
      p {
-      font-size: 1em;
+      font-size: 1.4em;
+      line-height: 1.3em;
       font-family: Georgia, 'Times New Roman', Times, serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
       font-weight: normal;
      }
   
       h2 {
           font-size: 2em;
-          color: #364c53;
           font-family: Georgia, 'Times New Roman', Times, serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
           border: 1px;
           margin: auto; 
           text-align: left;
+          color: #333;
+          margin-top: 30px;
+          margin-bottom: 15px;
+          border-bottom: 2px solid #376678;
+          padding-bottom: 5px;
         }
   
   
@@ -111,8 +115,12 @@
       display: block;
     }
   .caption {
-      font-size: 14px;
+      font-size: 10px;
       color: #555;
+      margin-top: 10px;
+      text-align: center;
+      padding-left: 20%;
+      padding-right: 20%;
   }
     .cutline {
       font-size: 10px;
@@ -122,6 +130,7 @@
       padding: 10px;
       font-style: italic;
       text-align: center;
+      line-height: 1.3em;
     }
     /*desktop*/
     #content {
@@ -137,6 +146,7 @@
    
     #nav-bar {
       width: 100%;
+      margin: 10px;
       display: flex;
       flex-direction: row;
       font-family: Georgia, 'Times New Roman', Times, serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
@@ -152,6 +162,14 @@
       text-decoration: none;
       background-color:none;
     } 
+
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background: #35424a;
+        color: #ffffff;
+    }
+    
   
     /*phone*/
     @media (orientation: portrait) {

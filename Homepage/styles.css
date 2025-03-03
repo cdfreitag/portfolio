@@ -11,14 +11,16 @@ body {
 header {
     background: #35424a;
     color: #ffffff;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
 }
  .about-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 30px;
+            gap: 0px;
+            padding-left: 10%;
+            padding-right: 10%;
         }
         .text {
             flex: 1;
@@ -28,41 +30,35 @@ header {
             flex: 1;
             text-align: right;
             width: 30px; 
+            object-fit: cover;
         }
         img {
-            max-width: 90%;
+            max-width: 70%;
             height: auto;
+            object-fit: cover;
         }
-    </style>
 
-.about-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px; /* Space between the image and text */
-}
-
-.headshot {
-    width: 200px; /* Adjust size as needed */
-    height: auto; /* Maintain aspect ratio */
-    border: 0px solid #35424a; /* Optional: border color to match the header */
-    flex-direction: left;
-    text-align: left;
-}
 
 header h1 {
     margin: 0;
     text-align: center;
 }
 
+p {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    padding-bottom: 10px;
+  }
+
 nav ul {
     list-style: none;
     padding: 0;
+    
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 10px;
 }
 
 nav a {
@@ -89,18 +85,23 @@ section {
     display: flex;
     align-items: center;
     background: #f9f9f9;
-    padding: 15px;
+    padding: 5px;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio-image {
     width: 100px; /* Adjust as needed */
-   
     margin-right: 15px; /* Space between image and text */
 }
 .portfolio-text {
-    flex-grow: 1; /* Allows the text to take the remaining space */
+    flex-grow: 0; /* Allows the text to take the remaining space */
+}
+
+#contact {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
 }
 
 footer {
@@ -110,12 +111,49 @@ footer {
     color: #ffffff;
 }
 
-/*responsive design */
-#content {
-    width: 50%;
-    margin: auto;
-  }
-  @media (orientation: portrait) 
+    /*desktop*/
     #content {
-      width: 100%
+        width: 50%;
+        margin: auto;
+        line-height: 1.5em;
+        font-size: 1.5em;
+      }
+    #about-container {
+      display: flex; 
+      flex-direction: row;
     }
+     
+      #nav-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        font-family: 'Merriweather';
+        position: sticky;
+        top: 0;
+        background-color: #57757d;
+      }
+    
+      .nav-button {
+        margin: auto;
+        text-align: left;
+      }
+      .nav-button a {
+        color: rgb(219, 221, 223);
+        text-decoration: none;
+        background-color:none;
+      } 
+    
+      /*phone*/
+      @media (orientation: portrait) {
+        #content {
+          width: 100%
+    
+        }
+        #about-container {
+          display: flex; 
+          flex-direction: auto;
+          margin-left: 10%;
+          margin-right: 10%;
+        }
+      }
+     
