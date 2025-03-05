@@ -1,7 +1,7 @@
 .header-image {
     position: relative;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .header-image img {
@@ -42,7 +42,7 @@
     }
     h1 {
       font-size: 4em;
-      color: #9fb8bf;
+      color: #b7d8e2;
       font-family: Georgia, 'Times New Roman', Times, serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
       border: 1px; 
       text-align: center;
@@ -174,7 +174,8 @@
     /*phone*/
     @media (orientation: portrait) {
       #content {
-        width: 100%
+        width: 100%;
+        margin: auto;
   
       }
       #about-container {
